@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and Deploy Site
         run: |
-              git config user.name github-actions
-              git config user.email github-actions@github.com
+              git config user.name "${GITHUB_ACTOR}"
+              git config user.email "${INPUT_EMAIL}"
               npx gh-pages -d . 
 
