@@ -12,6 +12,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Adjust as needed
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Build and Deploy Site
         run: |
-          npx gh-pages -d .
+          npx gh-pages -d build 
