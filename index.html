@@ -12,12 +12,12 @@
             background-color: #f9f9f9; /* Light background for contrast */
         }
         .btn-custom {
-            background-color: #007bff; /* Bootstrap primary color */
+            background-color: #ff69b4; /* Pink color for buttons */
             color: #fff; /* White text */
             border: none; /* Remove border */
         }
         .btn-custom:hover {
-            background-color: #0056b3; /* Darker shade on hover */
+            background-color: #ff1493; /* Darker pink on hover */
         }
         .card {
             border: 1px solid #e0e0e0; /* Light gray border for cards */
@@ -29,32 +29,31 @@
             color: #555; /* Medium gray for lead text */
         }
         .navbar {
-            background-color: #fff; /* White background for navbar */
-            border-bottom: 1px solid #e0e0e0; /* Light border at the bottom */
+            background-color: #ff1493; /* Navbar color */
         }
-        .navbar-brand, .nav-link {
-            color: #007bff; /* Bootstrap primary color for text */
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff; /* White text for navbar */
         }
-        .navbar-brand:hover, .nav-link:hover {
-            color: #0056b3; /* Darker shade on hover */
+        .navbar-nav .nav-link:hover {
+            color: #ffd700; /* Gold color on hover */
         }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#home">💖 Lisa's Journey</a>
+            <a class="navbar-brand" href="#">Love & Learning 💖</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#learn">📚 Learning Path</a>
+                        <a class="nav-link" href="#learn">Learn with Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">📞 Contact</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +61,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-light text-center py-5" id="home">
+    <section class="bg-light text-center py-5">
         <div class="container">
             <h1 class="display-4">Hey Zannella 💖</h1>
             <p class="lead mt-3">You are amazing, and I believe in you! Let's explore some cool stuff together. How about learning coding, chess, and even solving the Rubik's Cube? I'm here to help you every step of the way! 😘</p>
@@ -108,6 +107,28 @@
                             <a href="https://www.rubiks.com/" class="btn btn-custom">Learn to Solve</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5">Casual Pricing 💸</h2>
+            <p class="lead">Our prices are casual and can be converted into lovely experiences, like dates and other romantic stuff! 💕</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Basic Plan</h5>
+                    <p>$20 - Hugs and Kisses 💋</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Pro Plan</h5>
+                    <p>$50 - Movie Night 🍿</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Ultimate Plan</h5>
+                    <p>$100 - Dinner Date 🌹</p>
                 </div>
             </div>
         </div>
