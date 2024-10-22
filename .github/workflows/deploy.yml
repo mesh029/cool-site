@@ -22,9 +22,8 @@ jobs:
 
       - name: Configure Git user
         run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${INPUT_EMAIL}"  # Set this in repository secrets
-
+          git config --global user.name "mesh029"
+          git config --global user.email "oariri429@gmail.com" 
 
       - name: Build and Deploy Site
         run: |
