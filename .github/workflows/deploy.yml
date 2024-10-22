@@ -20,6 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Configure Git user
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${INPUT_EMAIL}"  # Set this in repository secrets
+
+
       - name: Build and Deploy Site
         run: |
               npx gh-pages -d . 
